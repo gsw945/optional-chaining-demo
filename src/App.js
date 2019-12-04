@@ -2,6 +2,16 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const obj = {
+  foo: {
+    bar: {
+      baz: 42,
+    },
+  },
+};
+const baz = obj?.foo?.bar?.baz; // 42
+const safe = obj?.qux?.baz; // undefined
+
 function App() {
   return (
     <div className="App">
