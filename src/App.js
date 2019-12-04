@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+// ----- begin ----- optional-chaining 语法测试
 const obj = {
   foo: {
     bar: {
@@ -11,6 +12,7 @@ const obj = {
 };
 const baz = obj?.foo?.bar?.baz; // 42
 const safe = obj?.qux?.baz; // undefined
+// ----- end ----- optional-chaining 语法测试
 
 function App() {
   return (
